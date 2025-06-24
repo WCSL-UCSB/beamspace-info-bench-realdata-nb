@@ -2,9 +2,8 @@
 
 **Windowed-Beamspace vs. Antenna-Space Processing**
 
-Fully-digital mmWave arrays with dozens (even hundreds) of antennas unlock enormous spatial‑multiplexing gains—but only if baseband complexity can be tamed.
-This codebase quantifies the price‑performance trade‑offs of low‑complexity **windowed beamspace** detection versus conventional **antenna‑space** processing, using **real 28 GHz urban channel measurements** and the analytic benchmarks introduced in our 2025 Asilomar paper.
-
+Fully-digital mmWave arrays with dozens (even hundreds) of antennas unlock enormous capacity gains, but only if computational complexity can be tamed.
+This codebase quantifies the capacity trade‑offs of low‑complexity **windowed beamspace** detection versus conventional **antenna‑space** processing, using **28 GHz urban channel measurements [1]**.
 ---
 
 ## Quick Start
@@ -45,7 +44,7 @@ You will see progress messages for each trial, then the capacity curves.
 * **Format expected** MATLAB `.mat` “MPC” files, one per location.
 * **Pre‑processing** `Make_Data.m` rotates AoAs to the array broadside, normalises delays to the dominant path, and discards paths whose AoA ∉ \[−90°, 90°].
 
-> *Want to try a different measurement set?*
+> *To try a different measurement set:*
 > Update `Make_Data.m`. 
 
 ---
@@ -71,12 +70,17 @@ The default parameters (`N = 64`, `W = 4`, `BW = 1 GHz`, …) match Figures 4a
 ## Citing This Work
 
 ```bibtex
-@inproceedings{cebeci2025scaling,
-  title     = {Scaling mmWave MU-MIMO: Information-Theoretic Guidance using Real-World Data},
-  author    = {Canan Cebeci and Oveys Delafrooz Noroozi and Upamanyu Madhow},
-  booktitle = {Proc. IEEE Asilomar Conf. Signals, Systems and Computers},
-  year      = {2025}
-}
+@INPROCEEDINGS{10942628,
+  author={Cebeci, Canan and Noroozi, Oveys Delafrooz and Madhow, Upamanyu},
+  booktitle={2024 58th Asilomar Conference on Signals, Systems, and Computers}, 
+  title={Scaling mmWave MU-MIMO: Information-Theoretic Guidance Using Real-World Data}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1620-1624},
+  keywords={Multiuser detection;Dimensionality reduction;Training;Spectral efficiency;Signal processing algorithms;Benchmark testing;Radiofrequency integrated circuits;Millimeter wave communication;Information theory;Antenna arrays;mmWave;MU-MIMO;beamspace processing},
+  doi={10.1109/IEEECONF60004.2024.10942628}}
+
 ```
 
 ---
@@ -84,6 +88,14 @@ The default parameters (`N = 64`, `W = 4`, `BW = 1 GHz`, …) match Figures 4a
 ## Contact
 
 For questions, suggestions, or requests to use the code email `{ccebeci}{oveys}@ucsb.edu`.
+
+---
+
+## Reference for the channel measurement dataset
+
+[1] R. Charbonnier, C. Lai, T. Tenoux, D. Caudill, G. Gougeon, J. Senic, C. Gentile, Y. Corre, J. Chuang, and N. Golmie, 
+“Calibration of ray-tracing with diffuse scattering against 28-GHz directional urban channel measurements,” 
+IEEE Transactions on Vehicular Technology, vol. 69, no. 12, pp. 14 264–14 276, 2020.
 
 ---
 ## Acknowledgement
