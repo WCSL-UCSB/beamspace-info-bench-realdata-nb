@@ -26,6 +26,7 @@ addpath(genpath(pwd));
 run main.m
 ```
 You will see progress messages for every trial and two figures, multi‑path and single‑path capacity curve once the Monte Carlo run finishes.
+
 ---
 
 ## Repository Map
