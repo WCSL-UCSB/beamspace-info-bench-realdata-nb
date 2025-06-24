@@ -40,7 +40,7 @@ You will see progress messages for every trial and two figures, multi‑path and
 | **`Channel_Generate.m`**         | Builds the channel matrix \$H(f)\$ from measured path delays, gains and AoAs.                                                     |
 | **`Find_Users.m`**               | Selects **K** users with at least the specified angular separation.                                                               |
 | **Pulse utilities**              | `Each_Path_Samples.m`, `RaisedCos_Pulse.m`, `Rectangular_Pulse.m`, etc.                                                           |
-| **`Plot_Capacity.m`**            | Publication‑ready plotting (fonts, colours, legend placement).                                                                    |
+| **`Plot_Capacity.m`**            | Plotting (fonts, colours, legend placement).                                                                    |
 
 ---
 
@@ -57,14 +57,14 @@ You will see progress messages for every trial and two figures, multi‑path and
 
 ## Reproducing the Paper Figures
 
-1. Set `Trials = 50` and `K = 16` (adjust down if RAM is limited).
-2. Run the driver twice:
+1. Set `Trials = 50` and `K = 16`.
 
-* `Window_Type = "Fixed"` – frequency‑independent beamspace window.
-* `Window_Type = "Floating"` – recomputed per sub‑carrier.
-  3. Cached `.mat` files let you re‑run only the plotting block to overlay scenarios.
+2. Run the driver:
 
-The default parameters (`N = 64`, `W = 4`, `BW = 1 GHz`, …) match Figures 4a/4b of the paper.
+* `Window_Type = "Fixed"`: frequency‑independent beamspace window.
+* `Window_Type = "Floating"`: recomputed per sub‑carrier.
+
+The default parameters (`N = 64`, `W = 4`, `BW = 1 GHz`, ...) match Figures 4a/4b of the paper.
 
 ---
 
