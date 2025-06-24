@@ -23,10 +23,10 @@ addpath(genpath(pwd));
 %     choose a different location.)
 
 % 3. Run the driver script
-run main.m```
+run main.m
+```
 
 You will see progress messages for every trial and two figures, multi‑path and single‑path capacity curve once the Monte Carlo run finishes.
-
 ---
 
 ## Repository Map
@@ -93,7 +93,7 @@ The default parameters (`N = 64`, `W = 4`, `BW = 1 GHz`, …) match Figures 4a
 
 ## Contact
 
-For questions, suggestions, or requests to use the code email `{ccebeci}{oveys}@ucsb.edu`.
+For questions, suggestions, or requests to use the code email `{oveys}{ccebeci}@ucsb.edu`.
 
 ---
 
@@ -106,7 +106,6 @@ IEEE Transactions on Vehicular Technology, vol. 69, no. 12, pp. 14 264–14 276,
 ---
 
 ## License
-
 
 
 ----
