@@ -14,14 +14,18 @@ using **28 GHz urban channel measurements [1]**.
 % 1. Clone the repo and open it in MATLAB
 addpath(genpath(pwd));
 
-% 2. Point to the mmWave MPC data (download separately)
-Path_MPC = "/path/to/MPC/files";
+% 2. Download the 28 GHz Downtown Boulder dataset
+%    ↳ https://nextg.nist.gov/submissions/112   (accept the Data‑Sharing Agreement)
+%    Extract the archive so that the MPC *.mat files live at:
+%    <repo>/NISTDowntownMeasurements/measurements/Boulder_Downtown/Measurements/...
+%         BoulderDowntown_28GHz_LOS/MPC files
+%    (Config.m auto‑detects this relative path; edit params.MPC.path there if you
+%     choose a different location.)
 
 % 3. Run the driver script
-run main_capacity_benchmarks.m
-```
+run main.m```
 
-You will see progress messages for each trial, then the capacity curves.
+You will see progress messages for every trial and two figures, multi‑path and single‑path capacity curve once the Monte Carlo run finishes.
 
 ---
 
@@ -100,6 +104,13 @@ For questions, suggestions, or requests to use the code email `{ccebeci}{oveys}@
 IEEE Transactions on Vehicular Technology, vol. 69, no. 12, pp. 14 264–14 276, 2020.
 
 ---
+
+## License
+
+
+
+----
+
 ## Acknowledgement
 
 This work was supported in part by the Center for Ubiquitous Connectivity (CUbiC), 
