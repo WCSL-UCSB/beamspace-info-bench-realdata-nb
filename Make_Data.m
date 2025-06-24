@@ -1,6 +1,6 @@
 function [dataset, path_numbers, LoS_AoAs]= Make_Data(path_MPC, locations, sector, reference_rotation)
 
-    % It's gonna be our final output (it's not complete yet)
+    % It's gonna be our final output
     data = [];
 
     % It's gonna show the number of paths that each loacation has (it's not complete yet)
