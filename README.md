@@ -3,7 +3,9 @@
 **Windowed-Beamspace vs. Antenna-Space Processing**
 
 Fully-digital mmWave arrays with dozens (even hundreds) of antennas unlock enormous capacity gains, but only if computational complexity can be tamed.
-This codebase quantifies the capacity trade‑offs of low‑complexity **windowed beamspace** detection versus conventional **antenna‑space** processing, using **28 GHz urban channel measurements [1]**.
+This codebase quantifies the capacity trade‑offs of low‑complexity **windowed beamspace** detection versus conventional **antenna‑space** processing, 
+using **28 GHz urban channel measurements [1]**.
+
 ---
 
 ## Quick Start
