@@ -173,6 +173,6 @@ function [Capacity_Antenna_Multi_Path, Capacity_Beam_Multi_Path, Capacity_Antenn
         Capacity_Antenna_Single_Path = Capacity_Antenna_Single_Path + sum(log2(1+SINR_Single_A), 2).'/Trials/K;
         Capacity_Beam_Single_Path = Capacity_Beam_Single_Path + sum(log2(1+SINR_Single_B), 2).'/Trials/K;
 
-        disp(t)
+        fprintf('Trial %d is completed, %d trials left.\n', t, Trials - t);
     end
 end
