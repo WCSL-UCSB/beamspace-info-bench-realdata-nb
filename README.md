@@ -105,11 +105,6 @@ IEEE Transactions on Vehicular Technology, vol. 69, no. 12, pp. 14 264–14 276,
 
 ---
 
-## License
-
-
-----
-
 ## Acknowledgement
 
 This work was supported in part by the Center for Ubiquitous Connectivity (CUbiC), 
